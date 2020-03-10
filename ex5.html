@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <form action="">
+        <label for="n1">N1:</label>
+        <input type="number" name="n1" id="n1">
+        <label for="n2">N2:</label>
+        <input type="number" name="n2" id="n2">
+        <button id="somar">Somar</button>
+    </form>
+    <script>
+        // var n1 = Number(prompt("Informe um número:"));
+        // var n2 = Number(prompt("Informe outro número:"));
+        // function soma(num1, num2){
+        //     return num1+num2;
+        // }
+        // var resultado = soma(n1,n2);
+        // console.log(`Soma = ${resultado}`);
+
+
+        // document.getElementById('somar').addEventListener('click', somar)
+        // function somar(){
+        //     n1 = Number(document.getElementById('n1').value);
+        //     n2 = Number(document.getElementById('n2').value);
+        //     alert(n1+n2);
+        // }
+
+        // Arrow function:
+        var n1 = Number(prompt("Informe um número:"));
+        var n2 = Number(prompt("Informe outro número:"));
+        var resultado = somar => `Resultado: ${n1+n2}`
+        console.log(resultado());
+    </script>
+</body>
+</html>

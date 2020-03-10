@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <script>
+        // Função comum
+        // var resposta = function(sentimento){
+        //     return `Eu estou ${sentimento}!`;
+        // }
+        // console.log(resposta('supimpa'));
+
+        // Arrow function (escrever menos) =>
+        var resposta = sentimento => `Eu estou ${sentimento}!`;
+        // resposta = variável que receberá o resultado da função
+        // sentimento = argumento da função
+        // => function
+        // Eu estou... = o que a função irá fazer
+        console.log(resposta('estupefato'));
+
+    </script>
+</body>
+</html>
